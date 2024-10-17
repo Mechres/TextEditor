@@ -306,7 +306,7 @@ void editorInsertNewline(){
 
 void editorDelChar(){
 	if(E.cy == E.numrows) return;
-	if(E.cy == 0 && E.cy == 0) return;
+	if(E.cx == 0 && E.cy == 0) return;
 
 	erow *row = &E.row[E.cy];
 	if(E.cx > 0){
